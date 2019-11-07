@@ -1,0 +1,233 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family:'Poppins', sans-serif;
+  }
+ /*
+ *
+ * Navebar
+ *
+ */
+
+.nav_logo img{
+    width: 80px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:white;
+    min-height: 8vh;
+}
+
+.nav_links{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav_links li{
+    list-style: none;
+}
+
+.nav_links a{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.menulist{
+    display: none;
+    cursor: pointer;
+}
+
+.menulist div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+}
+
+/*
+ *
+ * Hero 
+ *
+ */
+.hero {
+    width: 100%;
+    position: relative;
+    background-image: url("./Image/image1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 450px;
+    }
+      
+    .hero article {
+    box-sizing: border-box;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    padding: 3em;
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-align: center;
+    }
+
+ /*
+ *
+ * Horezintal line betwwen sections
+ *
+ */
+
+.line{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.line:before, .line:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid black;
+    margin: auto;
+}
+
+/*
+ *
+ * About Section
+ *
+ */
+
+#AboutMe-p{
+    text-align: center;
+    color: rgb(32, 32, 32);
+    width: 100%;
+    font-size: 18px;
+}
+
+/*
+ *
+ * Portofolio Section
+ *
+ */
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+.container{
+    width: 100%;
+    min-height: 300px;
+    background: #fff;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.container .box{
+width: 240px;
+position: relative;
+margin: 10px;
+box-sizing: border-box;
+color: #fff;
+}
+
+.container .box .detailes{
+    position: absolute;
+    top:150px;
+    bottom: 8px;
+    width: 240px;
+    background:rgba(0,0,0,.8);
+}
+
+.container .box .detailes .content{
+  margin-left: 10px; 
+}
+
+.container .box img{
+    position: relative;
+}
+
+.container .box .imgBox img{
+    width: 100%;
+}
+
+/*
+ *
+ * Contact Info Section
+ *
+ */
+
+#p-join-email{
+    text-align: center;
+}
+
+input[type=text] {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  margin-left:10%;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 30%;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#p-contactInfo{
+    text-align: center;
+}
+
+ /*
+ *
+ * Footer
+ *
+ */
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:white;
+    color: black;
+    text-align: center;
+ }
+
+footer p{
+    font-size: 14px;
+ }
+
+.fa {
+    padding: 8px;
+    font-size: 25px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: -10px 2px;
+    color:black;
+  }
+  
+.fa:hover {
+    opacity: 0.7;
+  }
